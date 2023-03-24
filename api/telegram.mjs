@@ -8,5 +8,5 @@ export default async ({ body }, { json }) => {
 	response = await bot?.receiveUpdates([body]);
 	// console.log('ok')
 	console.log(response)
-	// json(response)
+	json(response)
 }
