@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vc dev",
-    "dev-with-tunnel": "npm run tunnel & npm run dev",
-    "tunnel": "cloudflared tunnel --url http://localhost:3000"
+    "tunnel-dev": "lt --port 3000 & vc dev",
+    "tunnel": "ssh -R 80:localhost:3000 nokey@localhost.run"
   },
   "dependencies": {
     "telebot": "^1.4.1",

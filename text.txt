@@ -1,0 +1,4 @@
+
+    "dev": "vc dev",
+    "dev-with-tunnel": "npm run tunnel & npm run dev",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000"
